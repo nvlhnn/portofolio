@@ -8,7 +8,7 @@ body {
 
 
 button.navbar-toggler:hover{
-    background-color: lightseagreen;
+    background-color: #5ebed5;
     color: aliceblue;
 
 }
@@ -17,9 +17,33 @@ button.navbar-toggler{
     transition: .5s;
 }
 
-ul.nav{
+
+
+.contact-container{
+
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+        
 
 }
+
+.contact-container i{
+    font-size: 35px;
+
+}
+
+.contact-container a{
+    text-decoration: none;
+    color: inherit;
+
+}
+.contact-container a:hover{
+    text-decoration: none;
+    color: #5ebed5;
+}
+
+
 
 .cardtab span{
     background-color: #BEE3F8;
