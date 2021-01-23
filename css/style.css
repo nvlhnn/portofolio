@@ -16,8 +16,8 @@ button.navbar-toggler{
     transition: .5s;
 }
 
-.container.home{
-    margin-top: 7%
+ul.nav{
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 .kotak{
@@ -47,7 +47,7 @@ button.navbar-toggler{
 /* hover navbar */
 .anim-hr{
     width: 0px;
-    transition:  .2s ;
+    transition:  .s ;
     position: absolute;
     margin-top: -5px;
     color: #0dac50;
