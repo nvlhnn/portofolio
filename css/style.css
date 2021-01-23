@@ -23,8 +23,10 @@ ul.nav{
 
 .cardtab span{
     background-color: #BEE3F8;
-    padding: 5px;
-    margin-right: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
 }
 
 
