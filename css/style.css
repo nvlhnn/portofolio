@@ -1,5 +1,6 @@
 
 body {
+    background-color: #F2F2F2;
     position: flex;
     font-family: 'Poppins', sans-serif;
     color: #0f3551;
@@ -17,23 +18,19 @@ button.navbar-toggler{
 }
 
 ul.nav{
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
 }
 
-.kotak{
-    position: fixed;
-    height: 10%;
-    width: 5%;
-    background-color: salmon;
-    margin-top: 100%;
-    z-index: -1;
-    animation-name: buble;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    
+.cardtab span{
+    background-color: #BEE3F8;
+    padding: 5px;
+    margin-right: 4px;
 }
 
 
+/* .card{
+    border-radius: 20%
+} */
 
 .socmed li{
     margin-right: 40px;
@@ -43,11 +40,20 @@ ul.nav{
 }
 
 
+.skilltab .skillicon{
+    font-size: 7vw;
+}
+
+@media only screen and (max-width: 1199px) {
+    .skilltab .skillicon{
+        font-size: 150px;
+    }
+  }
 
 /* hover navbar */
 .anim-hr{
     width: 0px;
-    transition:  .s ;
+    transition:  .2s ;
     position: absolute;
     margin-top: -5px;
     color: #0dac50;
@@ -84,12 +90,22 @@ ul.nav{
 }
 .ic4:hover{
     margin-top: 0%;
-    alli
 }
 
 
 
-
+.kotak{
+    position: fixed;
+    height: 1vw;
+    width: 1vw;
+    background-color: #5ebed5;
+    margin-top: 100%;
+    z-index: -1;
+    animation-name: buble;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
 /* anim kotak */
 .kotak1{
     margin-left: 0%;
