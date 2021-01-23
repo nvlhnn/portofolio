@@ -1,23 +1,3 @@
-let container = document.getElementById('box-container')
-
-let i = 6;
-
-// document.addEventListener('click', function (event) {
-//     var x = event.clientX;
-//     var y = event.clientY;
-
-//     i++
-
-//     container.innerHTML += `
-//         <div class="random-box" id ="sskotak${i}" ></div>
-//     `
-
-//     event.preventDefault()
-
-
-//     console.log(event)
-// })
-
 function create(event) {
     //Create the image
     var i = document.createElement('div');
