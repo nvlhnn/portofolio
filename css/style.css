@@ -190,7 +190,7 @@ button.navbar-toggler{
     z-index: -1;
     animation-name: bubleRandom;
     animation-timing-function: linear;
-    animation-duration: 15s;
+    animation-duration: 10s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -223,7 +223,7 @@ button.navbar-toggler{
     }
 
     to{
-        margin-top: -60%;
+        top: -20px;
         transform: rotate(1200deg);
     }
 }
