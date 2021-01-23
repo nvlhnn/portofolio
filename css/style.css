@@ -1,0 +1,148 @@
+
+body {
+    position: flex;
+    font-family: 'Poppins', sans-serif;
+    color: #0f3551;
+}
+
+
+button.navbar-toggler:hover{
+    background-color: lightseagreen;
+    color: aliceblue;
+
+}
+
+button.navbar-toggler{
+    transition: .5s;
+}
+
+.container.home{
+    margin-top: 7%
+}
+
+.kotak{
+    position: fixed;
+    height: 10%;
+    width: 5%;
+    background-color: salmon;
+    margin-top: 100%;
+    z-index: -1;
+    animation-name: buble;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+
+
+
+.socmed li{
+    margin-right: 40px;
+    font-size: 250%;
+    margin-top: 1%;
+    transition: .1s;    
+}
+
+
+
+/* hover navbar */
+.anim-hr{
+    width: 0px;
+    transition:  .2s ;
+    position: absolute;
+    margin-top: -5px;
+    color: #0dac50;
+    margin-left: 8px;
+
+}
+
+.contact:hover ~ hr{
+    width: 140px;
+ }
+
+ .home:hover ~ hr{
+    width: 140px;
+ }
+ .skills:hover ~ hr{
+    width: 140px;
+ }
+ .projects:hover ~ hr{
+    width: 140px;
+ }
+
+
+
+
+/* hover icon  */
+.ic1:hover{
+    margin-top: 0%;
+}
+.ic2:hover{
+    margin-top: 0%;
+}
+.ic3:hover{
+    margin-top: 0%;
+}
+.ic4:hover{
+    margin-top: 0%;
+    alli
+}
+
+
+
+
+/* anim kotak */
+.kotak1{
+    margin-left: 0%;
+    animation-duration: 50s;
+
+}
+.kotak2{
+    margin-left: 20%;
+    animation-duration: 30s;
+
+}
+.kotak3{
+    margin-left: 40%;
+    animation-duration: 40s;
+
+}
+.kotak4{
+    margin-left: 60%;
+    animation-duration: 20s;
+
+}
+.kotak5{
+    margin-left: 80%;
+    animation-duration: 44s;
+
+}
+.kotak6{
+    margin-left: 100%;
+    animation-duration: 42s;
+
+
+}
+
+
+/* .container.main{
+    right: 0px;
+    left: 0px;
+    align-content: center;
+    display: flex;
+    background-color: aqua;
+    position: absolute;
+    justify-content: end;
+} */
+
+
+
+@keyframes buble{
+    from {
+        margin-top: 50%;
+    }
+
+    to{
+        margin-top: -20%;
+        transform: rotate(1200deg);
+    }
+}
