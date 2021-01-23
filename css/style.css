@@ -133,7 +133,6 @@ button.navbar-toggler{
     margin-top: 100%;
     z-index: -1;
     animation-name: buble;
-    animation-iteration-count: infinite;
     animation-timing-function: linear;
     
 }
@@ -141,33 +140,59 @@ button.navbar-toggler{
 .kotak1{
     margin-left: 0%;
     animation-duration: 50s;
+    animation-iteration-count: infinite;
+
+
 
 }
 .kotak2{
     margin-left: 20%;
     animation-duration: 30s;
+    animation-iteration-count: infinite;
+
 
 }
 .kotak3{
     margin-left: 40%;
     animation-duration: 40s;
+    animation-iteration-count: infinite;
+
 
 }
 .kotak4{
     margin-left: 60%;
     animation-duration: 20s;
+    animation-iteration-count: infinite;
+
 
 }
 .kotak5{
     margin-left: 80%;
     animation-duration: 44s;
+    animation-iteration-count: infinite;
+
 
 }
 .kotak6{
     margin-left: 100%;
     animation-duration: 42s;
+    animation-iteration-count: infinite;
 
 
+
+}
+
+.kotak-random{
+    position: fixed;
+    height: 1vw;
+    width: 1vw;
+    background-color: #5ebed5;
+    z-index: -1;
+    animation-name: bubleRandom;
+    animation-timing-function: linear;
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 
@@ -185,11 +210,20 @@ button.navbar-toggler{
 
 @keyframes buble{
     from {
-        margin-top: 50%;
     }
 
     to{
         margin-top: -20%;
+        transform: rotate(1200deg);
+    }
+}
+
+@keyframes bubleRandom{
+    from {
+    }
+
+    to{
+        margin-top: -60%;
         transform: rotate(1200deg);
     }
 }

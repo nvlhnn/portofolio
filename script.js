@@ -1,71 +1,38 @@
-// let content = document.getElementById('content')
-// let home = document.getElementById('home')
-// let projects = document.getElementById('projects')
-// let skills = document.getElementById('skills')
-// let contact = document.getElementById('contact')
+let container = document.getElementById('box-container')
+
+let i = 6;
+
+// document.addEventListener('click', function (event) {
+//     var x = event.clientX;
+//     var y = event.clientY;
+
+//     i++
+
+//     container.innerHTML += `
+//         <div class="random-box" id ="sskotak${i}" ></div>
+//     `
+
+//     event.preventDefault()
 
 
-// home.addEventListener('click', function () {
-//     content.innerHTML = homeContent()
-
-
+//     console.log(event)
 // })
 
-// projects.addEventListener('click', function () {
-//     content.innerHTML = ProjectContent()
+function create(event) {
+    //Create the image
+    var i = document.createElement('div');
 
-// })
-
-// skills.addEventListener('click', function () {
-
-// })
-
-// contact.addEventListener('click', function () {
-
-// })
+    //Set the source of the image
+    i.classList += 'kotak-random'
 
 
-// let homeContent = function () {
-//     return `
-//     <div class="container flex text-center home">
-//     <img src="images/profile.jpeg" width="300" class="rounded-circle">
+    //Set CSS styles so it appears where you clicked (Top left corner)
+    i.style.left = event.clientX + 'px';
+    i.style.top = event.clientY + 'px';
 
-//     <h1 class="" style="font-size: 700%; margin-top: 5%;">Naufal Hanan</h1>
-//     <p class="" style="font-size: 200%; margin-top: 1%;">Tech <span class="" style="color: #0dac50">
-//             Enthusiast</span> </p>
-
-//     <div class="container list">
-//         <ul class="socmed d-flex justify-content-center flex-row " style="list-style-type: none;">
-//             <li class="ic1"><a href="https://web.facebook.com/naufal.zean"><i class="fa fa-facebook"></i></a>
-//             </li>
-//             <li class="ic2"><a href="https://github.com/nvlhnn"><i class="fa fa-github"></i></a></li>
-//             <li class="ic3"><a href="https://www.instagram.com/nvlhnn/"><i class="fa fa-instagram"></i></a></li>
-//             <li class="ic4"><a href="https://www.linkedin.com/in/naufal-hanan-993584134"><i
-//                         class="fa fa-linkedin"></i></a></li>
-//         </ul>
-//     </div>
-// </div>
-// `
-// }
-
-
-// let ProjectContent = function () {
-//     return `
-// <div class="container flex text-center home " style="height: 800px;">
-
-// <h1 class="" style="font-size: 700%; margin-top: 5%;">Naufal Hanan</h1>
-// <p class="" style="font-size: 200%; margin-top: 1%;">Tech <span class="" style="color: #0dac50">
-//         Enthusiast</span> </p>
-
-// <div class="container list">
-//     <ul class="socmed d-flex justify-content-center flex-row " style="list-style-type: none;">
-//         <li class="ic1"><a href="https://web.facebook.com/naufal.zean"><i class="fa fa-facebook"></i></a>
-//         </li>
-//         <li class="ic2"><a href="https://github.com/nvlhnn"><i class="fa fa-github"></i></a></li>
-//         <li class="ic3"><a href="https://www.instagram.com/nvlhnn/"><i class="fa fa-instagram"></i></a></li>
-//         <li class="ic4"><a href="https://www.linkedin.com/in/naufal-hanan-993584134"><i
-//                     class="fa fa-linkedin"></i></a></li>
-//     </ul>
-// </div>
-// </div>`
-// }
+    //Add it to the body of the document
+    document.body.appendChild(i);
+    console.log(i)
+}
+//Main event listener for clicks
+document.addEventListener('click', create);
