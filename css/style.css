@@ -130,7 +130,7 @@ button.navbar-toggler{
     height: 1vw;
     width: 1vw;
     background-color: #5ebed5;
-    margin-top: 100%;
+    top: 110vh;
     z-index: -1;
     animation-name: buble;
     animation-timing-function: linear;
@@ -190,7 +190,6 @@ button.navbar-toggler{
     z-index: -1;
     animation-name: bubleRandom;
     animation-timing-function: linear;
-    animation-duration: 10s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -213,7 +212,7 @@ button.navbar-toggler{
     }
 
     to{
-        margin-top: -20%;
+        top: -20px;
         transform: rotate(1200deg);
     }
 }
@@ -224,6 +223,6 @@ button.navbar-toggler{
 
     to{
         top: -20px;
-        transform: rotate(1200deg);
+        transform: rotate(360deg);
     }
 }
