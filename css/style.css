@@ -1,4 +1,3 @@
-
 body {
     background-color: #F2F2F2;
     position: flex;
@@ -6,50 +5,42 @@ body {
     color: #0f3551;
 }
 
-
+/* hover navbar */
+ul.navbar-nav a:hover ~ hr{
+    width: 140px;
+}
+ul.navbar-nav hr{
+    width: 0px;
+    transition:  .2s ;
+    position: absolute;
+    margin-top: -5px;
+    color: #0dac50;
+    margin-left: 8px;
+}
 button.navbar-toggler:hover{
     background-color: #5ebed5;
     color: aliceblue;
-
 }
-
 button.navbar-toggler{
     transition: .5s;
 }
 
 
 
-.contact-container{
-
-        margin: 0 auto; /* Added */
-        float: none; /* Added */
-        margin-bottom: 10px; /* Added */
-        font-size: 5px;
-        
-
+/* tab home */
+/* hover icon  */
+.socmed li{
+    margin-right: 40px;
+    font-size: 250%;
+    margin-top: 1%;
+    transition: .1s;    
+}
+.socmed li:hover{
+    margin-top: 0%;
 }
 
-.contact-container i{
-    font-size: 35px;
-
-}
-
-.contact-container a{
-    text-decoration: none;
-    color: inherit;
-
-}
-.contact-container a:hover{
-    text-decoration: none;
-    color: #5ebed5;
-}
-
-
-
-
-
-
-.cardtab span{
+/* tab projects */
+.projects span{
     background-color: #BEE3F8;
     padding: 10px;
     margin-top: 10px;
@@ -58,73 +49,39 @@ button.navbar-toggler{
 }
 
 
-/* .card{
-    border-radius: 20%
-} */
-
-.socmed li{
-    margin-right: 40px;
-    font-size: 250%;
-    margin-top: 1%;
-    transition: .1s;    
-}
-
-
-.skilltab .skillicon{
+/* skills */
+.skills i{
     font-size: 7vw;
 }
-
 @media only screen and (max-width: 1199px) {
-    .skilltab .skillicon{
+    .skills i{
         font-size: 150px;
     }
   }
 
 
-/* hover navbar */
-.anim-hr{
-    width: 0px;
-    transition:  .2s ;
-    position: absolute;
-    margin-top: -5px;
-    color: #0dac50;
-    margin-left: 8px;
-
+/* tab contact */
+.contact > div{
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    font-size: 5px;
 }
-
-.contact:hover ~ hr{
-    width: 140px;
- }
-
- .home:hover ~ hr{
-    width: 140px;
- }
- .skills:hover ~ hr{
-    width: 140px;
- }
- .projects:hover ~ hr{
-    width: 140px;
- }
-
-
-
-
-/* hover icon  */
-.ic1:hover{
-    margin-top: 0%;
+.contact i{
+    font-size: 35px;
 }
-.ic2:hover{
-    margin-top: 0%;
+.contact a{
+    text-decoration: none;
+    color: inherit;
 }
-.ic3:hover{
-    margin-top: 0%;
-}
-.ic4:hover{
-    margin-top: 0%;
+.contact a:hover{
+    text-decoration: none;
+    color: #5ebed5;
 }
 
 
 
+/* box class */
 .kotak{
     position: fixed;
     height: 1vw;
@@ -132,56 +89,35 @@ button.navbar-toggler{
     background-color: #5ebed5;
     top: 110vh;
     z-index: -1;
+    animation-iteration-count: infinite;
     animation-name: buble;
     animation-timing-function: linear;
     
 }
-/* anim kotak */
 .kotak1{
     margin-left: 0%;
     animation-duration: 50s;
-    animation-iteration-count: infinite;
-
-
-
 }
 .kotak2{
     margin-left: 20%;
     animation-duration: 30s;
-    animation-iteration-count: infinite;
-
-
 }
 .kotak3{
     margin-left: 40%;
     animation-duration: 40s;
-    animation-iteration-count: infinite;
-
-
 }
 .kotak4{
     margin-left: 60%;
     animation-duration: 20s;
-    animation-iteration-count: infinite;
-
-
 }
 .kotak5{
     margin-left: 80%;
     animation-duration: 44s;
-    animation-iteration-count: infinite;
-
-
 }
 .kotak6{
     margin-left: 100%;
     animation-duration: 42s;
-    animation-iteration-count: infinite;
-
-
-
 }
-
 .kotak-random{
     position: fixed;
     height: 1vw;
@@ -195,17 +131,8 @@ button.navbar-toggler{
 }
 
 
-/* .container.main{
-    right: 0px;
-    left: 0px;
-    align-content: center;
-    display: flex;
-    background-color: aqua;
-    position: absolute;
-    justify-content: end;
-} */
 
-
+/* animation for box */
 
 @keyframes buble{
     from {
