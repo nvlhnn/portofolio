@@ -1,155 +1,150 @@
 body {
-    background-color: #F2F2F2;
-    position: flex;
-    font-family: 'Poppins', sans-serif;
-    color: #0f3551;
+  background-color: #f2f2f2;
+  position: flex;
+  font-family: "Poppins", sans-serif;
+  color: #0f3551;
+  /* width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; */
 }
 
 /* hover navbar */
-ul.navbar-nav a:hover ~ hr{
-    width: 140px;
+ul.navbar-nav a:hover ~ hr {
+  width: 140px;
 }
-ul.navbar-nav hr{
-    width: 0px;
-    transition:  .2s ;
-    position: absolute;
-    margin-top: -5px;
-    color: #0dac50;
-    margin-left: 8px;
+ul.navbar-nav hr {
+  width: 0px;
+  transition: 0.2s;
+  position: absolute;
+  margin-top: -5px;
+  color: #0dac50;
+  margin-left: 8px;
 }
-button.navbar-toggler:hover{
-    background-color: #5ebed5;
-    color: aliceblue;
+button.navbar-toggler:hover {
+  background-color: #5ebed5;
+  color: aliceblue;
 }
-button.navbar-toggler{
-    transition: .5s;
+button.navbar-toggler {
+  transition: 0.5s;
 }
-
-
 
 /* tab home */
 /* hover icon  */
-.socmed li{
-    margin-right: 40px;
-    font-size: 250%;
-    margin-top: 1%;
-    transition: .1s;    
+.socmed li {
+  margin-right: 40px;
+  font-size: 250%;
+  margin-top: 1%;
+  transition: 0.1s;
 }
-.socmed li:hover{
-    margin-top: 0%;
+.socmed li:hover {
+  margin-top: 0%;
 }
 
 /* tab projects */
-.projects span{
-    background-color: #BEE3F8;
-    padding: 10px;
-    margin-top: 10px;
-    margin-right: 10px;
-    border-radius: 4px;
+.projects span {
+  background-color: #bee3f8;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 4px;
 }
-
 
 /* skills */
-.skills i{
-    font-size: 7vw;
+.skills i {
+  font-size: 7vw;
 }
 @media only screen and (max-width: 1199px) {
-    .skills i{
-        font-size: 150px;
-    }
+  .skills i {
+    font-size: 150px;
   }
-
+}
 
 /* tab contact */
-.contact > div{
-    margin: 0 auto; /* Added */
-    float: none; /* Added */
-    margin-bottom: 10px; /* Added */
-    font-size: 5px;
+.contact > div {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+  font-size: 5px;
 }
-.contact i{
-    font-size: 35px;
+.contact i {
+  font-size: 35px;
 }
-.contact a{
-    text-decoration: none;
-    color: inherit;
+.contact a {
+  text-decoration: none;
+  color: inherit;
 }
-.contact a:hover{
-    text-decoration: none;
-    color: #5ebed5;
+.contact a:hover {
+  text-decoration: none;
+  color: #5ebed5;
 }
-
-
 
 /* box class */
-.kotak{
-    position: fixed;
-    height: 1vw;
-    width: 1vw;
-    background-color: #5ebed5;
-    top: 110vh;
-    z-index: -1;
-    animation-iteration-count: infinite;
-    animation-name: buble;
-    animation-timing-function: linear;
-    
+.kotak {
+  position: fixed;
+  height: 1vw;
+  width: 1vw;
+  background-color: #5ebed5;
+  top: 110vh;
+  z-index: -1;
+  animation-iteration-count: infinite;
+  animation-name: buble;
+  animation-timing-function: linear;
 }
-.kotak1{
-    margin-left: 0%;
-    animation-duration: 50s;
+.kotak1 {
+  margin-left: 0%;
+  animation-duration: 50s;
 }
-.kotak2{
-    margin-left: 20%;
-    animation-duration: 30s;
+.kotak2 {
+  margin-left: 20%;
+  animation-duration: 30s;
 }
-.kotak3{
-    margin-left: 40%;
-    animation-duration: 40s;
+.kotak3 {
+  margin-left: 40%;
+  animation-duration: 40s;
 }
-.kotak4{
-    margin-left: 60%;
-    animation-duration: 20s;
+.kotak4 {
+  margin-left: 60%;
+  animation-duration: 20s;
 }
-.kotak5{
-    margin-left: 80%;
-    animation-duration: 44s;
+.kotak5 {
+  margin-left: 80%;
+  animation-duration: 44s;
 }
-.kotak6{
-    margin-left: 100%;
-    animation-duration: 42s;
+.kotak6 {
+  margin-left: 100%;
+  animation-duration: 42s;
 }
-.kotak-random{
-    position: fixed;
-    height: 1vw;
-    width: 1vw;
-    background-color: #5ebed5;
-    z-index: -1;
-    animation-name: bubleRandom;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+.kotak-random {
+  position: fixed;
+  height: 1vw;
+  width: 1vw;
+  background-color: #5ebed5;
+  z-index: -1;
+  animation-name: bubleRandom;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
-
-
 
 /* animation for box */
 
-@keyframes buble{
-    from {
-    }
+@keyframes buble {
+  from {
+  }
 
-    to{
-        top: -20px;
-        transform: rotate(1200deg);
-    }
+  to {
+    top: -20px;
+    transform: rotate(1200deg);
+  }
 }
 
-@keyframes bubleRandom{
-    from {
-    }
+@keyframes bubleRandom {
+  from {
+  }
 
-    to{
-        top: -20px;
-        transform: rotate(360deg);
-    }
+  to {
+    top: -20px;
+    transform: rotate(360deg);
+  }
 }
