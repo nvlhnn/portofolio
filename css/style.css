@@ -148,3 +148,45 @@ button.navbar-toggler {
     transform: rotate(360deg);
   }
 }
+
+/* Custom Modal Styling */
+.modal-content {
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #0F3551;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+  height: 15%;
+  margin-top: 0;
+  top: 50%;
+  
+  border-radius: 30px;
+  opacity: 0.2;
+
+  
+  border: none;
+
+}
+
+.modal-img {
+  height: 70vh;
+  object-fit: contain;
+}
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+  opacity: 0.3;
+}
+
+.carousel-item img {
+  border-radius: 10px;
+}
